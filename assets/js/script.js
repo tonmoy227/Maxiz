@@ -307,6 +307,15 @@ Last change:    00/00/00
 					.set(el, {transformOrigin: 'center center'})
 					.fromTo(el, { rotate: 0}, { rotate: 180, duration: 2, immediateRender: false})
 				});	
+				$(window).on("load", function () {
+					Splitting();
+				});
+				if ($('.scene').length > 0 ) {
+					$('.scene').parallax({
+						scalarX: 10.0,
+						scalarY: 10.0,
+					}); 
+				};
 			},
 			StickyHeader: function (){
 				jQuery(window).on('scroll', function() {

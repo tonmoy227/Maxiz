@@ -28,12 +28,21 @@
 	&:before {
 		top: 49%;
 		left: 0;
-		width: 100%;
+		right: 0;
+		width: 0%;
 		height: 2px;
 		content: '';
+		margin: 0 auto;
 		position: absolute;
 		transform: translateY(-50%);
+		transition: all 1000ms ease;
 		background-color: rgba(255, 255, 255, 0.15);
+	}
+	&.active {
+		&:before {
+			width: 100%;
+			transition-delay: 1000ms;
+		}
 	}
 }
 .txt-process-item-4 {
