@@ -1,0 +1,145 @@
+.txt-pricing-item-area-3 {
+	background: #fff;
+	overflow: hidden;
+	margin-top: 45px;
+	border-radius: 30px;
+	filter: drop-shadow(0px 0px 30px rgba(0, 0, 0, 0.10));
+}
+.txt-pricing-item-3 {
+	.pricing-name {
+		width: 100%;
+		max-width: 322px;
+		background: #282A3A;
+		h3 {
+			color: #fff;
+			font-size: 30px;
+			font-weight: 700;
+			max-width: 180px;
+		}
+	}
+	.pricing-list {
+		width: 100%;
+		max-width: 675px;
+		padding: 50px 30px 50px 50px;
+		ul {
+			flex-wrap: wrap;
+			display: flex;
+		}
+		li {
+			width: 50%;
+			margin-bottom: 20px;
+			i {
+				margin-right: 8px;
+			}
+		}
+	}
+	.pricing-price {
+		width: 100%;
+		max-width: 290px;
+		background: #F7F5FC;
+		.plan-price {
+			h3 {
+				font-weight: 700;
+				font-size: 42px;
+				color: var(--txt-title-color-1);
+				sub {
+					bottom: 0;
+					color: #5939C6;
+					font-size: 26px;
+				}
+			}
+			span {
+				margin-top: 5px;
+				display: block;
+				font-size: 20px;
+				font-family: var(--txt-headline-3);
+			}
+		}
+		.price-btn {
+			margin-top: 32px;
+			a {
+				color: #5939C6;
+				font-size: 16px;
+				font-weight: 500;
+				border-radius: 5px;
+				padding: 12px 28px;
+				display: inline-block;
+				border: 2px solid  #5939C6;
+				font-family: var(--txt-headline-3);
+				img {
+					margin-left: 10px;
+				}
+			}
+		}
+	}
+	&:nth-child(even) {
+		.pricing-name  {
+			background-color: #030617;
+		}
+		.pricing-list {
+			background-color: #F7F5FC;
+		}
+		.pricing-price {
+			background-color: #fff;
+		}
+	}
+}
+@media (max-width: 1200px) {
+	.txt-pricing-item-3 .pricing-name {
+		max-width: 270px;
+	}
+	.txt-pricing-item-3 .pricing-price {
+		max-width: 240px;
+	}
+}
+@media (max-width: 1024px) {
+	.txt-pricing-item-3 .pricing-name {
+		max-width: 240px;
+	}
+	.txt-pricing-item-3 .pricing-price {
+		max-width: 200px;
+	}
+	.txt-pricing-item-3 .pricing-name h3 {
+		font-size: 24px;
+	}
+	.txt-pricing-item-3 .pricing-price .price-btn a {
+		padding: 10px 20px;
+		img {
+			display: none;
+		}
+	}
+	.txt-pricing-item-3 .pricing-price .plan-price h3 {
+		font-size: 30px;
+	}
+	.txt-pricing-item-3 .pricing-list {
+		padding: 50px 30px;
+	}
+}
+@media (max-width: 991px) {
+	.txt-pricing-item-3 {
+		flex-wrap: wrap;
+	}
+	.txt-pricing-item-3 .pricing-name {
+		width: 100%;
+		padding: 20px;
+		max-width: 100%;
+	}
+	.txt-pricing-item-3 .pricing-list {
+		max-width: 100%;
+	}
+	.txt-pricing-item-3 .pricing-price {
+		max-width: 100%;
+		padding: 30px 15px;
+	}
+	.txt-pricing-item-3 .pricing-list {
+		padding: 20px 30px;
+	}
+	.txt-pricing-item-3 .pricing-price .price-btn {
+		margin-top: 15px;
+	}
+}
+@media (max-width: 680px) {
+	.txt-pricing-item-3 .pricing-list li {
+		width: 100%;
+	}
+}

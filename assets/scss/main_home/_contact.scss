@@ -1,0 +1,129 @@
+.txtm-contact-section {
+	background-color: #0a294b;
+}
+.txtm-contact-content {
+	z-index: 1;
+	justify-content: end;
+	padding: 110px 0px 25px;
+	.txt-section-title-m {
+		p {
+			font-family: var(--txt-heading-main);
+		}
+	}
+	.txtm-contant-bg {
+		top: -40px;
+		z-index: -2;
+		right: -250px;
+		transition: all 800ms ease;
+		&.active {
+			right: -70px;
+		}
+	}
+	.txtm-contact-img {
+		left: 0;
+		bottom: 0;
+		.inner-img {
+			z-index: -1;
+			position: relative;
+		}
+		.shape_img1 {
+			top: 38%;
+			z-index: 1;
+			right: 70px;
+			transition: all 700ms ease;
+		}
+		.shape_img2 {
+			z-index: 1;
+			right: -75px;
+			bottom: 15px;
+			transition: all 700ms ease;
+		}
+		.shape_img3 {
+			z-index: 1;
+			bottom: 50px;
+			left: -185px;
+			transition: all 700ms ease;
+		}
+		&.active {
+			.shape_img1 {
+				right: 0;
+				transition-delay: 400ms;
+			}
+			.shape_img2 {
+				right: -15px;
+				transition-delay: 500ms;
+			}
+			.shape_img3 {
+				left: -105px;
+				transition-delay: 600ms;
+			}
+		}
+	}
+	.txtm-contact-form {
+		max-width: 600px;
+		form {
+			margin-top: 25px;
+		}
+		input {
+			width: 100%;
+			height: 67px;
+			border: none;
+			padding-left: 35px;
+			margin-bottom: 15px;
+			border-radius: 30px;
+			background-color: #fff;
+			&::placeholder {
+				color: #191818;
+				font-size: 14px;
+				font-family: var(--txt-heading-main);
+			}
+		}
+		button {
+			color: #fff;
+			width: 100%;
+			height: 57px;
+			border: none;
+			margin-top: 8px;
+			font-size: 17px;
+			font-weight: 800;
+			border-radius: 30px;
+			transition: all 500ms ease;
+			background-color: #191818;
+			&:hover {
+				color: var(--txt-main-color);
+			}
+		}
+	}
+}
+@media (max-width: 1500px) {
+	.txtm-contact-content {
+		padding-right: 50px;
+	}
+	.txtm-contact-content .txtm-contant-bg {
+		right: 0;
+	}
+	.txtm-contact-content .txtm-contact-img .shape_img3 {
+		left: 0;
+	}
+}
+@media (max-width: 1280px) { 
+	.txtm-contact-content .txtm-contact-img  {
+		display: none;
+	}
+	.txtm-contact-content .txtm-contant-bg {
+		left: 0;
+		right: 0;
+		text-align: center;
+	}
+	.txtm-contact-content {
+		justify-content: center;
+	}
+}
+@media (max-width: 991px) { 
+	.txtm-contact-section {
+		background-color: var(--txt-main-color);
+	}
+	.txtm-contact-content .txtm-contant-bg {
+		display: none;
+	}
+}

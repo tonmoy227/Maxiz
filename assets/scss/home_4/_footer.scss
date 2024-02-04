@@ -1,0 +1,34 @@
+.txt-footer-section-4 {
+	background-color: #030617;
+	.txt-footer-cta-4 {
+		padding: 60px 0px;
+		background: linear-gradient(90deg, rgba(143, 115, 255, 0.25) 0%, rgba(83, 71, 255, 0.25) 45.27%, rgba(83, 71, 255, 0.25) 57.66%, rgba(33, 211, 253, 0.25) 100%);
+	}
+}
+.txt-footer-cta-content-4 {
+	.txt-btn-4 {
+		&:before {
+			border: 12px solid #1b2f75;
+		}
+		a {
+			color: #fff;
+			&:before {
+				background-color: #fff;
+			}
+		}
+	}
+	h3 {
+		color: #fff;
+		font-size: 90px;
+		font-weight: 600;
+		max-width: 445px;
+		text-align: right;
+	}
+	p {
+		max-width: 375px;
+		color: rgba(255, 255, 255, 0.8);
+	}
+}
+.txt-footer-content-area-4 {
+	padding-top: 100px;
+}

@@ -1,0 +1,145 @@
+.txt-footer-section-3 {
+	overflow: hidden;
+}
+.txt-footer-scroll-text {
+	padding-top: 40px;
+	overflow: hidden;
+	display: flow-root;
+	margin-bottom: 80px;
+	h3 {
+		color: #5939C6;
+		font-weight: 700;
+		font-size: 120px;
+		margin: 0px 10px;
+		display: inline-block;
+		span {
+			color: #0306171A;
+		}
+	}
+}
+.txt-footer-content-3 {
+	z-index: 1;
+	.footer-circle-shape {
+		left: 0;
+		z-index: -1;
+		bottom: 0;
+		right: 0;
+		width: 680px;
+		height: 680px;
+		opacity: 0.04;
+		margin: 0 auto;
+		border-radius: 100%;
+		background: linear-gradient(90deg, #5D56EF 0%, #F950BA 100%);
+	}
+}
+.txt-footer-widget-3 {
+	.brand-logo {
+		margin-bottom: 30px;
+	}
+	p {
+		margin: 0 auto;
+		font-size: 20px;
+		max-width: 660px;
+		padding-bottom: 40px;
+	}
+	.footer-social {
+		a {
+			width: 60px;
+			height: 60px;
+			display: flex;
+			color: #5939C6;
+			margin: 0px 12px;
+			align-items: center;
+			border-radius: 100%;
+			justify-content: center;
+			border: 1px solid #5939C6;
+			&:hover {
+				color: #fff;
+				background-color: #5939C6;
+			}
+		}
+	}
+	&.ver_2 {
+		p {
+			color: rgba(255, 255, 255, 0.8);
+		}
+		.footer-social {
+			a {
+				color: #4471FE;
+				border: 2px solid #4471FE;
+				&:hover {
+					color: #fff;
+					background-color: #4471FE;
+				}
+			}
+		}
+
+	}
+}
+.txt-footer-menu-3 {
+	margin: 55px 0px 40px;
+	li {
+		font-size: 18px;
+		margin: 0px 50px;
+		position: relative;
+		font-family: var(--txt-heading-2);
+		&:before {
+			top: 2px;
+			width: 2px;
+			content: '';
+			height: 22px;
+			right: -50px;
+			position: absolute;
+			background-color: #545661;
+		}
+		&:last-child {
+			&:before {
+				display: none;
+			}
+		}
+	}
+	&.ver_2 {
+		li {
+			a {
+				color: #fff;
+			}
+		}
+	}
+}
+.txt-copyright-text-3 {
+	color: #030617;
+	padding: 20px 0px;
+	border-top: 2px solid rgba(3, 6, 23, 0.15);
+	&.ver_2 {
+		border-top: 1px solid #4471FE;
+		color: rgba(255, 255, 255, 0.7);
+	}
+}
+@media (max-width: 680px) {
+	.txt-footer-menu-3 li {
+		margin: 0px 20px;
+	}
+	.txt-footer-menu-3 li:before {
+		top: 4px;
+		right: -23px;
+	}
+	.txt-footer-content-3 .footer-circle-shape {
+		display: none;
+	}
+}
+@media (max-width: 480px) {
+	.txt-footer-scroll-text h3 {
+		font-size: 60px;
+	}
+	.txt-footer-widget-3 .footer-social a {
+		width: 40px;
+		height: 40px;
+	}
+	.txt-footer-menu-3 li {
+		font-size: 16px;
+	}
+	.txt-footer-menu-3 li:before {
+		top: 6px;
+		height: 15px;
+	}
+}

@@ -1,0 +1,25 @@
+.txt-award-content-4 {
+	border-bottom: 1px solid  #21D2FD;;
+	.txt-award-title {
+		width: 20%;
+		height: 200px;
+		background: var(--txt-gradient-3);
+		h3 {
+			color: #fff;
+			font-size: 50px;
+			font-weight: 500;
+		}
+	}
+}
+.txt-sponsor-scroll-2 {
+	width: 80%;
+	height: 200px;
+	overflow: hidden;
+	line-height: 160px;
+	background: transparent;
+	.txt-sp-img1_2 {
+		.inner-img {
+			height: 35px;
+		}
+	}
+}

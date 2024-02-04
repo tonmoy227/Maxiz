@@ -1,0 +1,126 @@
+.txt-blog-content-4 {
+	gap: 40px;
+	padding-top: 50px;
+}
+.txt-blog-item-4 {
+	z-index: 1;
+	overflow: hidden;
+	padding-bottom: 75px;
+	&:before,
+	&:after {
+		left: 36px;
+		bottom: 0;
+		content: '';
+		z-index: -1;
+		width: 110px;
+		height: 150px;
+		position: absolute;
+		transform: rotate(55deg);
+		background:  linear-gradient(0deg, rgba(40, 44, 56, 0.20) 0%, rgba(40, 44, 56, 0.20) 100%), #8E72FF;
+	}
+	&:after {
+		left: auto;
+		right: 36px;
+		transform: rotate(-55deg);
+		background: linear-gradient(0deg, rgba(40, 44, 56, 0.20) 0%, rgba(40, 44, 56, 0.20) 100%), #21D2FD;
+	}
+	.blog-img {
+		overflow: hidden;
+		border-radius: 10px 10px 0px 0px;
+	}
+	.blog-text {
+		left: 0;
+		right: 0;
+		bottom: 0;
+		width: 85%;
+		margin: 0 auto;
+		position: absolute;
+		padding: 40px 40px 30px;
+		backdrop-filter: blur(15px);
+		border-radius: 10px 10px 0px 0px;
+		background:  linear-gradient(90deg, #8F73FF 0%, #5347FF 45.27%, #4471FE 57.66%, #21D3FD 100%);
+		.blog-meta {
+			margin-bottom: 20px;
+			padding-bottom: 15px;
+			border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+			a {
+				color: #fff;
+				font-size: 16px;
+				font-weight: 500 ;
+				span {
+					color: rgba(255, 255, 255, 0.50);
+				}
+			}
+		}
+		.blog_title {
+			padding-bottom: 12px;
+			a {
+				color: #fff;
+				font-size: 30px;
+				font-weight: 600;
+			}
+		}
+		p {
+			color: #fff;
+			padding-bottom: 20px;
+		}
+		.txt-btn-4_2 {
+			a {
+				background: #fff;
+				padding: 15px 35px;
+				span,i {
+					@extend%txt-gradient-text-three;
+				}
+				i {
+					&:after {
+						background: var(--txt-gradient-3);
+					}
+				}
+			}
+		}
+	}
+}
+.txt-blog-item-4_2 {
+	gap: 20px;
+	margin-bottom: 25px;
+	padding-bottom: 25px;
+	border-bottom: 1px solid rgba(3, 6, 23, 0.1);
+	.blog-img {
+		width: 200px;
+		height: 200px;
+		overflow: hidden;
+		border-radius: 5px;
+	}
+	.blog-text {
+		max-width: 315px;
+		.blog-meta {
+			margin-bottom: 15px;
+			padding-bottom: 15px;
+			border-bottom: 1px solid rgba(3, 6, 23, 0.1);
+			a {
+				font-size: 16px;
+				color: rgba(3, 6, 23, 0.8);
+				span {
+					color: #FF3838;
+				}
+			}
+		}
+		.blog_title {
+			padding-bottom: 10px;
+			a {
+				color: #030617;
+				font-size: 26px;
+				font-weight: 500;
+			}
+		}
+		p {
+			font-size: 16px;
+			color: rgba(3, 6, 23, 0.8);
+		}
+	}
+	&:last-child {
+		margin-bottom: 0;
+		padding-bottom: 0;
+		border-bottom: none;
+	}
+}

@@ -1,0 +1,172 @@
+.txt-sponsor-cta-section {
+	z-index: 1;
+	overflow: hidden;
+	padding-bottom: 128px;
+	&:before {
+		left: 0;
+		width: 60%;
+		content: '';
+		z-index: -1;
+		height: 100%;
+		position: absolute;
+		background-size: cover;
+		background-position: center center;
+		background-image: url(../img/bg/ab-bg.jpg);
+	}
+}
+.txt-sponsor-cta-content {
+	width: 54%;
+	.txt-main-slider-sponsor-area {
+		width: 100%;
+		margin-left: 0;
+		padding: 47px 50px;
+		background: #5939C6;
+	}
+	.main-sponsor-img {
+		height: 45px;
+		display: flex;
+		cursor: pointer;
+		align-items: center;
+		justify-content: center;
+		img {
+			opacity: .5;
+			transition: all 500ms ease;
+		}
+		&:hover {
+			img {
+				opacity: 1;
+			}
+		}
+	}
+}
+.txt-sponsor-cta-content {
+	.txt-cta-content {
+		padding-top: 95px;
+	}
+	.txt-cta-text-3 {
+		max-width: 625px;
+	}
+	.txt-btn-3 {
+		margin-right: 40px;
+	}
+}
+.txt-about-feature-3 {
+	border-radius: 15px;
+	margin: 40px 0px 50px;
+	padding: 25px 15px 0px;
+	backdrop-filter: blur(17.5px);
+	background: rgba(4, 7, 29, 0.20);
+	border: 1px dashed rgba(255, 255, 255, 0.50);
+	ul {
+		display: flex;
+		flex-wrap: wrap;
+	}
+	li {
+		width: 50%;
+		color: #fff;
+		padding: 0px 20px;
+		align-items: center;
+		margin-bottom: 25px;
+		display: flex !important;
+		font-family: var(--txt-heading-2);
+		i {
+			color: #5969FC;
+			line-height: 1;
+			font-size: 30px;
+			margin-right: 20px;
+		}
+	}
+}
+.txt-about-cta-btn-3 {
+	gap: 60px;
+	.txt-about-cta-3 {
+		.cta-icon {
+			width: 60px;
+			height: 60px;
+			margin-right: 15px;
+			border-radius: 100%;
+			border: 2px solid #fff;
+			i {
+				color: #fff;
+				font-size: 22px;
+				line-height: .75;
+			}
+		}
+		.cta-text {
+			a,span {
+				display: block;
+			}
+			span {
+				font-size: 14px;
+				padding-bottom: 3px;
+				color: rgba(255, 255, 255, 0.5);
+			}
+			a {
+				line-height: 1;
+				font-size: 20px;
+				font-weight: 700;
+				color: #fff;
+				font-family: var(--txt-heading-3);
+			}
+		}
+	}
+}
+.txt-sponsor-video-play {
+	width: 46%;
+	height: auto;
+	object-fit: cover;
+	border-radius: 0px 0px 0px 100px;
+	&:after {
+		z-index: -1;
+		left: 114px;
+		width: 143px;
+		content: '';
+		height: 143px;
+		bottom: -128px;
+		position: absolute;
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: center center;
+		background-image: url(../img/misc/tringle-shape.png);
+
+	}
+}
+@media (max-width: 1800px) {  
+	.txt-sponsor-video-play:after {
+		display: none;
+	}
+}
+@media (max-width: 1250px) { 
+	.txt-sponsor-video-play {
+		display: none;
+	} 
+	.txt-sponsor-cta-section:before {
+		width: 100%;
+	}
+	.txt-sponsor-cta-content {
+		width: 100%;
+	}
+}
+@media (max-width: 767px) { 
+	.txt-sponsor-cta-content .txt-cta-text-3 {
+		padding: 0px 15px;
+	}
+	.txt-about-feature-3 li {
+		padding: 0;
+	}
+	.txt-about-feature-3 li i {
+		margin-right: 10px;
+	}
+	.txt-about-cta-btn-3 {
+		gap: 20px;
+	}
+	.txt-sponsor-cta-content .txt-btn-3 {
+		margin-right: 0;
+	}
+	
+}
+@media (max-width: 680px) {  
+	.txt-about-feature-3 li {
+		width: 100%;
+	}
+}

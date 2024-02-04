@@ -1,0 +1,139 @@
+.txt-about-content-4 {
+	gap: 50px;
+}
+.txt-about-img-wrap-4 {
+	gap: 20px;
+	.txt-about-img-4_1 {
+		overflow: hidden;
+		border-radius: 20px;
+	}
+	.txt-about-exp4 {
+		z-index: 1;
+		position: relative;
+		margin-top: -20px;
+		border-radius: 500px;
+		background: var(--txt-gradient-3);
+		h3 {
+			color: #fff;
+			display: flex; 
+			font-size: 60px;
+			font-weight: 600;
+			padding: 13px 20px;
+			align-items: center;
+			justify-content: center;
+			span {
+				font-size: 25px;
+				font-weight: 500;
+				margin-left: 13px;
+			}
+		}
+	}
+	.txt-about-img-4_2 {
+		.inner_img_1 {
+			overflow: hidden;
+			margin-bottom: 20px;
+			border-radius: 300px;
+		}
+		.inner_img_2 {
+			overflow: hidden;
+			border-radius: 10px;
+		}
+	}
+}
+.txt-about-text-4 {
+	max-width: 550px;
+	padding-top: 45px;
+	.txt-section-title-4 {
+		.section_title,p {
+			color: #fff;
+		}
+	}
+}
+.txt-about-feature-4 {
+	margin: 25px 0px 30px;
+}
+.txt-about-ft-item-4 {
+	.ft-icon {
+		width: 75px;
+		height: 75px;
+		margin-right: 15px;
+		border-radius: 10px;
+		background: #101635;
+		border: 1.5px solid #8F73FF;
+		i {
+			font-size: 45px;
+			line-height: .75;
+			@extend%txt-gradient-text-three;
+		}
+	}
+	.ft-text {
+		max-width: 185px;
+		h4 {
+			color: #fff;
+			font-size: 20px;
+			font-weight: 500;
+		}
+	}
+}
+.txt-about-cta-list-area {
+	gap: 40px;
+	margin-bottom: 25px;
+	padding-bottom: 10px;
+	border-bottom: 1.5px solid rgba(255, 255, 255, 0.2);
+}
+.txt-about-cta-list {
+	li {
+		color: #fff;
+		margin-bottom: 10px;
+		font-family: var(--txt-heading-4);
+		i {
+			margin-right: 10px;
+			@extend%txt-gradient-text-three;
+		}
+	}
+}
+.txt-about-cta-4 {
+	width: 100%;
+	max-width: 260px;
+	.inner-icon {
+		margin-right: 15px;
+		i {
+			font-size: 60px;
+			@extend%txt-gradient-text-three;
+		}
+	}
+	.inner-text {
+		h4 {
+			color: #fff;
+			font-size: 20px;
+			font-weight: 600;
+		}
+		span {
+			display: inline-block;
+			font-family: var(--txt-heading-4);
+			@extend%txt-gradient-text-three;
+		}
+	}
+}
+.txt-about-video-4 {
+	.inner-icon {
+		color: #fff;
+		width: 58px;
+		height: 58px;
+		margin-right: 20px;
+		border-radius: 100%;
+		background: var(--txt-gradient-3);
+	}
+	.inner-text {
+		h4 {
+			color: #fff;
+			font-size: 24px;
+			font-weight: 500;
+		}
+		span {
+			font-weight: 300;
+			display: inline-block;
+			@extend%txt-gradient-text-three;
+		}
+	}
+}

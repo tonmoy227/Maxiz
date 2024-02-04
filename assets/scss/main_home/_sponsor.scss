@@ -1,0 +1,30 @@
+.txtm-sponsor-content {
+	h3 {
+		color: #000000;
+		font-size: 16px;
+		font-weight: 900;
+		padding-bottom: 20px;
+		span {
+			font-weight: 700;
+		}
+	}
+}
+.txtm-sponsor-item {
+	width: 230px;
+	height: 117px;
+	display: flex;
+	margin: 0 auto;
+	cursor: pointer;
+	border-radius: 50px;
+	align-items: center ;
+	justify-content: center;
+	border: 2px solid #edefee;
+	img {
+		transition: all 500ms ease;
+	}
+	&:hover {
+		img {
+			transform: scale(1.05);
+		}
+	}
+}

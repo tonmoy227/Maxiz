@@ -1,0 +1,37 @@
+.txt-slider-item-4 {
+	overflow: hidden;
+	padding: 200px 0px 80px;
+	&:before {
+		top: 0;
+		right: 0;
+		content: '';
+		width: 33%;
+		height: 824px;
+		position: absolute;
+		background-color: #000;
+	}
+	.slider-side-img {
+		right: 0;
+		bottom: 100px;
+	}
+	.txt-slider-text-img-4 {
+		max-width: 917px;
+		h1 {
+			color: #030617;
+			font-size: 86px;
+			font-weight: 600;
+			padding-bottom: 40px;
+		}
+		.txt-slider-img-4_1 {
+			padding-bottom: 25px;
+		}
+		p {
+			max-width: 672px;
+		}
+		.txt-btn-4 {
+			right: -30px;
+			bottom: -30px;
+			position: absolute;
+		}
+	}
+}

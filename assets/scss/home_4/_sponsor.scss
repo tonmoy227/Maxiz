@@ -1,0 +1,45 @@
+.txt-sponsor-scroll,
+.txt-sponsor-scroll-2  {
+	display: flow-root;
+	padding: 42px 0px 38px;
+	background: linear-gradient(90deg, #8F73FF 0%, #5347FF 45.27%, #4471FE 57.66%, #21D3FD 100%);
+	.txt-sp-img1_2 {
+		z-index: 4;
+		cursor: pointer;
+		margin: 0px 60px;
+		display: inline-block;
+		.inner-img {
+			height: 42px;
+			display: flex;
+			cursor: pointer;
+			overflow: hidden;
+			align-items: center;
+			justify-content: center;
+		}
+		.txt_img_1 {
+			transition: all 500ms ease;
+		}
+		.txt_img_2 {
+			left: 0;
+			right: 0;
+			opacity: 0;
+			margin: 0 auto;
+			position: absolute;
+			visibility: hidden;
+			transition: 500ms ease;
+			transform: translateY(45px);
+		}
+		&:hover {
+			.txt_img_1 {
+				opacity: 0;
+				visibility: hidden;
+				transform: translateY(-45px);
+			}
+			.txt_img_2 {
+				opacity: 1;
+				visibility: visible;
+				transform: translateY(0px);
+			}
+		}
+	}
+}
