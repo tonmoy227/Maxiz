@@ -34,6 +34,7 @@ Last change:    00/00/00
 				this.MainSliderOne();
 				this.MainSliderThree();
 				this.SponsorScroll();
+				this.FaqActive();
 				this.ProjectSliderFour();
 				this.TXTMServiceSlider();
 				this.TXTMTeamSlider();
@@ -430,7 +431,14 @@ Last change:    00/00/00
 				});
 			},
 			
-			
+			FaqActive: function (){
+				$(document).on('click', '.txt-faq-accordion .accordion-item', function(){
+					$(this).addClass('faq_active').siblings().removeClass('faq_active')
+				});
+				$(document).on('click', '.txt-service-accordion .accordion-item', function(){
+					$(this).addClass('faq_active').siblings().removeClass('faq_active')
+				});
+			},
 			MasonryGridItem: function (){
 				var $grid = $('.grid').imagesLoaded( function() {
 					$grid.masonry({

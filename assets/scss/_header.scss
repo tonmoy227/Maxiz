@@ -432,6 +432,15 @@
 				}
 			}
 		}
+		.txt-heade-action {
+			gap: 20px;
+		}
+		.txt-navbar_options button  {
+			color: #fff;
+			i {
+				color: #fff;
+			}
+		}
 		&.sticky-on {
 			.header-top-cta {
 				display: none !important;
@@ -925,6 +934,9 @@
 		gap: 10px;
 		margin-left: 0;
 	}
+	.txt-header-section.header_type_three .txt-btn-3 {
+		display: none;
+	}
 }
 @media (max-width: 480px) {
 	.txt-header-section.header_type_main .txt-header-menu-wrap {
@@ -932,5 +944,12 @@
 	}
 	.txt-header-section.header_type_main .header-cta-btn  {
 		display: none;
+	}
+	.txt-header-section.header_type_three .brand-logo {
+		width: 180px;
+		padding: 15px;
+	}
+	.txt-header-section.header_type_three .txt-header-content {
+		padding-right: 15px;
 	}
 }

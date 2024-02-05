@@ -93,6 +93,7 @@
 		z-index: 1;
 		font-size: 20px;
 		font-family: var(--txt-heading-3);
+		transition: all 500ms ease;
 		i {
 			margin: 0px 10px;
 		}
@@ -106,6 +107,16 @@
 			border-radius: 100%;
 			position: absolute;
 			border: 2px solid #D9D9D9;
+			transition: all 500ms ease;
+		}
+		&:hover {
+			letter-spacing: 2px;
+			i {
+				color: #5939C6;
+			}
+			&:before {
+				border: 2px solid #5939C6;
+			}
 		}
 	}
 	.txt-pro-button-prev-3,

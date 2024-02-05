@@ -53,6 +53,7 @@
 		border-radius: 100%;
 		margin-bottom: 28px;
 		background-color: #121421;
+		transition: all 700ms ease;
 		i {
 			color: #fff;
 			opacity: 0.75;
@@ -93,6 +94,12 @@
 			text-align: center;
 			font-size: 16px;
 			color: rgba(255, 255, 255, 0.75);
+		}
+	}
+	&:hover {
+		.process-icon {
+			background-color: #5939C6;
+			transform: translateY(-10px);
 		}
 	}
 }

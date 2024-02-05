@@ -29,7 +29,15 @@
 		opacity: 0.04;
 		margin: 0 auto;
 		border-radius: 100%;
+		transform: scale(0);
 		background: linear-gradient(90deg, #5D56EF 0%, #F950BA 100%);
+		transition: all 700ms ease;
+	}
+	&.active {
+		.footer-circle-shape {
+			transition-delay: 1500ms;
+			transform: scale(1.0);
+		}
 	}
 }
 .txt-footer-widget-3 {
@@ -83,6 +91,22 @@
 		margin: 0px 50px;
 		position: relative;
 		font-family: var(--txt-heading-2);
+		a {
+			position: relative;
+			display: inline-block;
+			&:before {
+				left: 0;
+				right: 0;
+				bottom: 0;
+				height: 1px;
+				content: '';
+				width: 0%;
+				margin: 0 auto;
+				position: absolute;
+				background-color: #545661;
+				transition: all 500ms ease;
+			}
+		}
 		&:before {
 			top: 2px;
 			width: 2px;
@@ -95,6 +119,14 @@
 		&:last-child {
 			&:before {
 				display: none;
+			}
+		}
+		&:hover {
+			a {
+				color: #5939C6;
+				&:before {
+					width: 100%;
+				}
 			}
 		}
 	}
