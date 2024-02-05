@@ -39,6 +39,7 @@ Last change:    00/00/00
 				this.TXTMTeamSlider();
 				this.TXTMPriceSlider();
 				this.TestimonialSlideFour();
+				this.TestimonialSliderOne();
 				
 				
 
@@ -316,6 +317,22 @@ Last change:    00/00/00
 						scalarY: 10.0,
 					}); 
 				};
+				gsap.utils.toArray('.txt-portfolio-section-3 .txt-portfolio-bg').forEach((el, index) => { 
+					let tl1 = gsap.timeline({
+						scrollTrigger: {
+							trigger: el,
+							scrub: 1,
+							start: "top 80%",
+							end: "buttom 60%",
+							toggleActions: "play none none reverse",
+							markers: false
+						}
+					})
+
+					tl1
+					.set(el, {transformOrigin: 'center center'})
+					.from(el, {  scale: .7 }, {background: "inherit", scale: 1, duration: 1, immediateRender: false})
+				})
 			},
 			StickyHeader: function (){
 				jQuery(window).on('scroll', function() {
@@ -786,6 +803,52 @@ Last change:    00/00/00
 					navigation: {
 						prevEl: ".testimonial-one-button-prev",
 						nextEl: ".testimonial-one-button-next",
+					},
+				});
+			},
+			TestimonialSliderOne: function (){
+				var swiper = new Swiper(".txt-testimonial-slider-nav-1", {
+					loop: true,
+					spaceBetween: 0,
+					speed: 500,
+					slidesPerView: 5,
+					centeredSlides: true,
+					navigation: {
+						nextEl: ".txt-testimonial-next-1",
+						prevEl: ".txt-testimonial-prev-1",
+					},
+					breakpoints: {  
+						'1400': {
+							slidesPerView: 5,
+						},
+						'1200': {
+							slidesPerView: 5,
+						},
+						'992': {
+							slidesPerView: 3,
+						},
+						'768': {
+							slidesPerView: 3,
+						},
+						'576': {
+							slidesPerView: 3,
+							spaceBetween: 20,
+						},
+						'0': {
+							slidesPerView: 1,
+						},
+					},
+				});
+				var swiper2 = new Swiper(".txt-testimonial-slider-for-1", {
+					loop: true,
+					spaceBetween: 10,
+					effect: 'fade',
+					navigation: {
+						nextEl: ".txt-testimonial-next-1",
+						prevEl: ".txt-testimonial-prev-1",
+					},
+					thumbs: {
+						swiper: swiper,
 					},
 				});
 			},
