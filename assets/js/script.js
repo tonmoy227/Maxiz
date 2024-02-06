@@ -32,6 +32,7 @@ Last change:    00/00/00
 				this.ProjectSliderthree();
 				this.TextScroller();
 				this.MainSliderOne();
+				this.MainSlider3();
 				this.MainSliderThree();
 				this.SponsorScroll();
 				this.FaqActive();
@@ -569,6 +570,24 @@ Last change:    00/00/00
 						},
 					},
 				});
+				$('.txt-sponsor-scroll').marquee({
+					gap: 0,
+					speed: 50,
+					delayBeforeStart: 0,
+					direction: 'right',
+					duplicated: true,
+					pauseOnHover: false,
+					startVisible:true,
+				});
+				$('.txt-sponsor-scroll-2').marquee({
+					gap: 0,
+					speed: 50,
+					delayBeforeStart: 0,
+					direction: 'left',
+					duplicated: true,
+					pauseOnHover: false,
+					startVisible:true,
+				});
 			},
 			ProjectSliderthree: function (){
 				var swiper2 = new Swiper(".txt-portfolio-slider-3", {
@@ -640,6 +659,22 @@ Last change:    00/00/00
 					});
 				});
 			},
+			MainSlider3: function (){
+				var slider = new Swiper('.txt-main-slider-4', {
+					spaceBetween: 30,
+					slidesPerView: 1,
+					effect: 'fade',
+					loop: true,
+					navigation: {
+						nextEl: ".tx-main-button-next_3",
+						prevEl: ".tx-main-button-prev_3",
+					},
+					pagination: {
+						el: ".swiper-main-paginations-2",
+						clickable: true,
+					},
+				});
+			},
 			ProjectSliderFour: function (){
 				var swiper2 = new Swiper(".txt-project-sldier-4", {
 					slidesPerView: 2,
@@ -649,8 +684,8 @@ Last change:    00/00/00
 					roundLengths: true,
 					speed: 1000,
 					navigation: {
-						prevEl: ".txt-pro-button-prev",
-						nextEl: ".txt-pro-button-next",
+						prevEl: ".txt-pro-button-prev-4",
+						nextEl: ".txt-pro-button-next-4",
 					},
 					breakpoints: {  
 						'1400': {
@@ -682,6 +717,11 @@ Last change:    00/00/00
 							centeredSlides: false,
 						},
 					},
+				});
+				$(document).ready(function() {
+					$('#serviceTab .nav-link').hover(function() {
+						$(this).tab('show');
+					});
 				});
 			},
 			TXTMTeamSlider: function (){

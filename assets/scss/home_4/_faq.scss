@@ -1,5 +1,14 @@
 .txt-faq-section-4 {
-	margin: 0px 100px; 
+	z-index: 1;
+	margin: 0px 100px;
+	.faq-bg {
+		bottom: 0 ;
+		right: 0;
+		z-index: -1;
+		width: 90%;
+		height: 100%;
+		margin: 0 auto;
+	} 
 	.txt-faq-img-4 {
 		left: 0;
 		top: -100px;
@@ -13,7 +22,8 @@
 	.accordion-item {
 		border: none;
 		border-radius: 0;
-		padding: 10px 15px 20px;
+		margin-bottom: 0;
+		padding: 20px 15px 20px;
 		background-color: transparent;
 		border-bottom: 1px solid #545661;
 		.accordion-button { 
@@ -30,7 +40,7 @@
 	.accordion-item .faq_active {
 		background:  linear-gradient(90deg, rgba(143, 115, 255, 0.2) 0%, rgba(83, 71, 255, 0.2) 45.27%, rgba(83, 71, 255, 0.2) 57.66%, rgba(33, 211, 253, 0.2) 100%);
 	}
-	 .accordion-button:not(.collapsed) {
+	.accordion-button:not(.collapsed) {
 		color: #5347FF;
 		font-weight: 500;
 	}

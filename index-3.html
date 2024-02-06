@@ -20,7 +20,7 @@
   	<link rel="stylesheet" href="assets/css/style.css">
   </head>
 
-  <body class="txt-home-1">
+  <body class="txt-home-3">
 
 <!-- Start of Header section
 	============================================= -->
@@ -46,7 +46,7 @@
 		<div class="container">
 			<div class="txt-header-content d-flex justify-content-between align-items-center">
 				<div class="brand-logo">
-					<a href="#"><img src="assets/img/logo/logo-5.png" alt=""></a>
+					<a href="#"><img src="assets/img/logo/logo-3.svg" alt=""></a>
 				</div>
 				<nav class="main-navigation clearfix ul-li">
 					<ul id="main-nav" class="nav navbar-nav clearfix">
@@ -109,7 +109,7 @@
 				</nav>
 				<div class="header-cta-seacrh d-flex align-items-center">
 					<div class="search-btn">
-						<button><i class="far fa-search"></i></button>
+						<button class="search-btn"><i class="far fa-search"></i></button>
 					</div>
 					<div class="cta-btn  text-capitalize">
 						<a href="#">Contact Us <i class="fas fa-chevron-double-right"></i></a>
@@ -118,6 +118,20 @@
 			</div>
 		</div>
 	</header>
+	<!-- search filed -->
+	<div class="search-body">
+		<div class="search-form">
+			<form action="#" class="search-form-area">
+				<input class="search-input" type="search" placeholder="Search Here">
+				<button type="submit" class="search-btn1">
+					<i class="fas fa-search"></i>
+				</button>	
+			</form>
+			<div class="outer-close text-center search-btn">
+				<i class="far fa-times"></i>
+			</div>
+		</div>
+	</div>
 <!-- End of Header section
 	============================================= -->
 
@@ -125,14 +139,14 @@
 	============================================= -->
 	<section id="txt-slider-4" class="txt-slider-section-4" data-background="assets/img/bg/slider-bg4.jpg">
 		<div class="txt-slider-content-4">
-			<div class="txt-main-slider-4">
+			<div class="txt-main-slider-4 position-relative">
 				<div class="swiper-wrapper">
 					<div class="swiper-slide">
 						<div class="txt-slider-item-4 position-relative">
 							<div class="slider-side-img position-absolute"><img src="assets/img/misc/slider-4.1.jpg" alt=""></div>
 							<div class="container">
 								<div class="txt-slider-text-img-4 txt-headline-4 pera-content position-relative">
-									<h1>The Digital Agency For Your Success</h1>
+									<h1 class="tx-split-text">The Digital Agency For Your Success</h1>
 									<div class="txt-slider-img-4_1 position-relative">
 										<img src="assets/img/bg/slider-4.jpg" alt="">
 										<div class="txt-btn-4 text-uppercase">
@@ -144,6 +158,45 @@
 							</div>
 						</div>
 					</div>
+					<div class="swiper-slide">
+						<div class="txt-slider-item-4 position-relative">
+							<div class="slider-side-img position-absolute"><img src="assets/img/misc/slider-4.1.jpg" alt=""></div>
+							<div class="container">
+								<div class="txt-slider-text-img-4 txt-headline-4 pera-content position-relative">
+									<h1 class="tx-split-text">The Digital Agency For Your Success</h1>
+									<div class="txt-slider-img-4_1 position-relative">
+										<img src="assets/img/bg/slider-4.jpg" alt="">
+										<div class="txt-btn-4 text-uppercase">
+											<a href="#">get in touch <i class="far fa-arrow-right"></i></a>
+										</div>
+									</div>
+									<p>Lorem ipsum dolor sit amet nulla ex interdum cursus pharetra aenean. Pellentesque amet est velit class nisi. Suscipit primis aliquet montes hac hendrerit vestibulum placerat.</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="swiper-slide">
+						<div class="txt-slider-item-4 position-relative">
+							<div class="slider-side-img position-absolute"><img src="assets/img/misc/slider-4.1.jpg" alt=""></div>
+							<div class="container">
+								<div class="txt-slider-text-img-4 txt-headline-4 pera-content position-relative">
+									<h1 class="tx-split-text">The Digital Agency For Your Success</h1>
+									<div class="txt-slider-img-4_1 position-relative">
+										<img src="assets/img/bg/slider-4.jpg" alt="">
+										<div class="txt-btn-4 text-uppercase">
+											<a href="#">get in touch <i class="far fa-arrow-right"></i></a>
+										</div>
+									</div>
+									<p>Lorem ipsum dolor sit amet nulla ex interdum cursus pharetra aenean. Pellentesque amet est velit class nisi. Suscipit primis aliquet montes hac hendrerit vestibulum placerat.</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="tx-main-arrow-next-prev position-absolute d-flex align-items-center justify-content-center">
+					<div class="tx-slider-arrow d-flex justify-content-center align-items-center tx-main-button-prev_3"><i class="fal fa-long-arrow-up"></i></div>
+					<div class="swiper-main-paginations-2 text-center"></div>
+					<div class="tx-slider-arrow d-flex justify-content-center align-items-center tx-main-button-next_3"><i class="fal fa-long-arrow-down"></i></div>
 				</div>
 			</div>
 		</div>
@@ -914,7 +967,8 @@
 
 <!-- Start of FAQ section 
 	============================================= -->
-	<section id="txt-faq-4" class="txt-faq-section-4 pt-90 pb-90 position-relative" data-background="assets/img/bg/faq-bg.jpg">
+	<section id="txt-faq-4" class="txt-faq-section-4 pt-90 pb-90 position-relative">
+		<span class="faq-bg position-absolute" data-background="assets/img/bg/faq-bg.jpg"></span>
 		<span class="txt-faq-img-4 position-absolute"><img src="assets/img/misc/faq-2.jpg" alt=""></span>
 		<div class="container">
 			<div class="txt-faq-content-area-4 d-flex justify-content-end">
@@ -1135,17 +1189,12 @@
 	<script src="assets/js/jquery.marquee.min.js"></script>
 	<script src="assets/js/jquery.counterup.min.js"></script>
 	<script src="assets/js/waypoints.min.js"></script>
+	<script src="assets/js/split-type.min.js"></script>
 	<script src="assets/js/ScrollTrigger.min.js"></script>
 	<script src="assets/js/ScrollToPlugin.min.js"></script>
 	<script src="assets/js/ScrollSmoother.min.js"></script>
 	<script src="assets/js/SplitText.min.js"></script>
+	<script src="assets/js/parallax.min.js"></script>
 	<script src="assets/js/script.js"></script>
-	<script>
-		$(document).ready(function() {
-			$('#serviceTab .nav-link').hover(function() {
-				$(this).tab('show');
-			});
-		});
-	</script>
 </body>
 </html>	
