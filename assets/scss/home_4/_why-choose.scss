@@ -16,6 +16,30 @@
 		overflow: hidden;
 		margin-top: 40px;
 		border-radius: 10px;
+		img {
+			transition: all 900ms ease;
+			clip-path: polygon(0 0, 0 0, 0 100%, 0 100%);
+		}
+		&:before {
+			top: 0;
+			left: 0;
+			width: 0%;
+			content: '';
+			height: 100%;
+			position: absolute;
+			transition: all 1000ms ease;
+			background: var(--txt-gradient-3);
+		}
+		&.active {
+			img {
+				clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+				transition-delay: 800ms;
+			}
+			&:before {
+				width: 100%;
+				transition-delay: 500ms;
+			}
+		}
 	}
 }
 .txt-why-choose-skill-4 {
@@ -140,5 +164,31 @@
 				background-color: #4311D1;
 			}
 		}
+	}
+}
+@media (max-width: 1850px) {
+	.txt-why-choose-section-4 .txt-wc-side-img-4 {
+		right: -150px;
+	}
+}
+@media (max-width: 1650px) {
+	.txt-why-choose-section-4 .txt-wc-side-img-4 {
+		right: -250px;
+	}
+}
+@media (max-width: 1440px) {
+	.txt-why-choose-section-4 .txt-wc-side-img-4 {
+		right: -350px;
+	}
+}
+@media (max-width: 1365px) {
+	.txt-why-choose-section-4 .txt-wc-side-img-4 {
+		display: none;
+	}
+}
+@media (max-width: 991px) {
+	.txt-why-choose-content-4 {
+		flex-wrap: wrap;
+		justify-content: center;
 	}
 }

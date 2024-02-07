@@ -134,6 +134,12 @@
 		li {
 			a {
 				color: #fff;
+				&:before {
+					background-color: #4471FE;
+				}
+				&:hover {
+					color: #4471FE;
+				}
 			}
 		}
 	}
@@ -145,6 +151,11 @@
 	&.ver_2 {
 		border-top: 1px solid #4471FE;
 		color: rgba(255, 255, 255, 0.7);
+	}
+}
+@media (max-width: 1200px) { 
+	.txt-footer-cta-content-4 h3 {
+		font-size: 50px;
 	}
 }
 @media (max-width: 680px) {

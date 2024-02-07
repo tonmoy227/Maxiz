@@ -43,7 +43,7 @@
 			padding: 5px 20px;
 			border-radius: 50px;
 			display: inline-block;
-			margin-bottom: 18px;
+			margin-bottom: 10px;
 			visibility: hidden;
 			font-family: var(--txt-alt-font-1);
 			background: var(--txt-gradient-3);
@@ -57,8 +57,19 @@
 				color: #fff;
 				font-size: 48px;
 				font-weight: 600;
-				display: inline-block;
-				
+				display: inline !important;
+				background-position-y: 0px;
+				background-repeat: no-repeat;
+				background-size: 0 100%;
+				backface-visibility: hidden;
+				-webkit-backface-visibility: hidden;
+				background-image: linear-gradient(transparent calc(100% - 2px), currentColor 2px);
+				-webkit-transition: 0.6s cubic-bezier(0.215, 0.61, 0.355, 1);
+				transition: 0.6s cubic-bezier(0.215, 0.61, 0.355, 1);
+				&:hover {
+					color: #fff;
+					background-size: 100% 100%;
+				}
 			}
 		}
 	}
@@ -102,14 +113,79 @@
 		.txt-slider-arrow {
 			width: 62px;
 			height: 62px;
+			z-index: 1;
 			cursor: pointer;
+			overflow: hidden;
 			margin: 0px 6px;
+			position: relative;
 			background: #030617;
 			border-radius: 22px;
 			border: 1px solid #4471FE;
+			&:before {
+				bottom: 0;
+				left: 0;
+				z-index: -1;
+				width: 100%;
+				height: 0%;
+				content: '';
+				position: absolute;
+				border-radius: 22px;
+				background: #4471FE;
+				transition: all 500ms ease;
+			}
 			i {
-				@extend%txt-gradient-text-three;
+				color: #4471FE;
+			}
+			&:hover {
+				&:before {
+					height: 100%;
+				}
+				i {
+					color: #fff;
+				}
 			}
 		}
+	}
+}
+@media (max-width: 1366px) {
+	.txt-project-item-4 .project-text {
+		bottom: 40px;
+		max-width: 80%;
+		margin: 0 auto;
+	}
+	.txt-project-item-4 .project-text .projec_title a {
+		font-size: 40px;
+	}
+	.txt-project-section-4 .txt-project-testimonial-bg {
+		height: 1000px;
+	}
+}
+@media (max-width: 1200px) {
+	.txt-project-item-4 {
+		margin: 0 auto;
+	}
+	.txt-project-section-4 .txt-project-testimonial-bg {
+		height: 100%;
+	}
+	.txt-project-section-4 .txt-section-title-4 .section_title {
+		color: #fff;
+	}
+}
+@media (max-width: 680px) {
+	.txt-project-sldier-4 .txt-arrow-next-prev-4 {
+		margin-top: 30px;
+	}
+	.txt-project-item-4 .project-text {
+		bottom: 20px;
+	}
+	.txt-project-item-4 .project-text .projec_title a {
+		font-size: 30px;
+	}
+	.txt-project-item-4 .project-text .pro-cate {
+		font-size: 12px;
+	}
+	.txt-project-sldier-4 .txt-arrow-next-prev-4 .txt-slider-arrow {
+		width: 45px;
+		height: 45px;
 	}
 }

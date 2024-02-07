@@ -136,3 +136,24 @@
 	border-color: #4471FE;
 	background-color: #4471FE;
 }
+@media (max-width: 1366px) {
+	.testimonial-block_three-content {
+		padding-left: 30px;
+	}
+}
+@media (max-width: 1300px) {
+	.testimonial-block_three-image::before {
+		display: none;
+	}
+}
+@media (max-width: 1120px) {
+	.testimonial-three-arrow {
+		width: 275px;
+	}
+}
+@media (max-width: 991px) {
+	.testimonial-three-arrow {
+		width: 100%;
+		position: static !important;
+	}
+}

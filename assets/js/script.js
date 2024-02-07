@@ -278,7 +278,7 @@ Last change:    00/00/00
 						});
 					});
 				});
-				gsap.utils.toArray('.txtm-sponsor-slider').forEach((el, index) => { 
+				gsap.utils.toArray('.txtm-sponsor-slider, .txt-why-choose-video-play').forEach((el, index) => { 
 					let tl1 = gsap.timeline({
 						scrollTrigger: {
 							trigger: el,
@@ -334,6 +334,22 @@ Last change:    00/00/00
 					tl1
 					.set(el, {transformOrigin: 'center center'})
 					.from(el, {  scale: .7 }, {background: "inherit", scale: 1, duration: 1, immediateRender: false})
+				})
+				gsap.utils.toArray('.txt-faq-img-4 img, .cta-bg').forEach((el, index) => { 
+					let tl1 = gsap.timeline({
+						scrollTrigger: {
+							trigger: el,
+							scrub: 1,
+							start: "top 80%",
+							end: "buttom 60%",
+							toggleActions: "play none none reverse",
+							markers: false
+						}
+					})
+
+					tl1
+					.set(el, {transformOrigin: 'center center'})
+					.from(el, {  scale: 1.3 }, {background: "inherit", scale: 1, duration: 1, immediateRender: false})
 				})
 			},
 			StickyHeader: function (){

@@ -12,10 +12,11 @@
 	.txt-faq-img-4 {
 		left: 0;
 		top: -100px;
+		overflow: hidden;
 	}
 }
 .txt-faq-content-4 {
-	max-width: 680px;
+	max-width: 710px;
 }
 .txt-faq-accordion.ver_4 {
 	margin-top: 25px;
@@ -43,5 +44,26 @@
 	.accordion-button:not(.collapsed) {
 		color: #5347FF;
 		font-weight: 500;
+	}
+}
+@media (max-width: 1600px) {
+	.txt-faq-section-4 {
+		margin: 0;
+	}
+	.txt-faq-content-4 {
+		max-width: 660px;
+	}
+}
+@media (max-width: 1460px) {
+	.txt-faq-content-4 {
+		max-width: 590px;
+	}
+}
+@media (max-width: 1365px) {
+	.txt-faq-section-4 .txt-faq-img-4 {
+		display: none;
+	}
+	.txt-faq-content-4 {
+		max-width: 100%;
 	}
 }

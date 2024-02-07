@@ -1,9 +1,17 @@
 .txt-cta-section-4 {
 	z-index: 1;
+	overflow: hidden;
 	padding: 170px 0px;
 	.background_overlay {
 		z-index: -1;
 		background-color: rgba(0, 7, 26, 0.7);
+	}
+	.cta-bg {
+		top: 0;
+		left: 0;
+		z-index: -2;
+		width: 100%;
+		height: 100%;
 	}
 }
 .txt-cta-content-4 {
@@ -28,5 +36,19 @@
 			backdrop-filter: blur(7.5px);
 
 		}
+	}
+}
+@media (max-width: 991px) {
+	.txt-cta-section-4 {
+		padding: 80px 15px;
+	}
+	.txt-cta-content-4 h3 {
+		font-size: 40px;
+		padding-bottom: 20px;
+	}
+}
+@media (max-width: 680px) {
+	.txt-cta-content-4 h3 {
+		font-size: 30px;
 	}
 }

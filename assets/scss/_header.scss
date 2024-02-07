@@ -628,6 +628,9 @@
 				}
 			}
 		}
+		.txt-navbar_options button i {
+			color: #4471FE;
+		}
 	}
 }
 /*// Search style*/
@@ -971,6 +974,12 @@
 	}
 	.txt-header-section .txt-navbar_options {
 		display: block;
+	}
+	.txt-header-section.header_type_four .header-cta-seacrh .cta-btn {
+		display: none;
+	}
+	.txt-header-section.header_type_four .txt-header-top-content {
+		display: none;
 	}
 }
 @media (max-width: 680px) {

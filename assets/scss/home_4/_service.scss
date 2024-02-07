@@ -1,7 +1,8 @@
 .txt-service-section-4 {
 	z-index: 1;
+	overflow: hidden;
 	.txt-section-title-4 {
-		max-width: 570px;
+		max-width: 670px;
 	}
 	.txt-service-shape {
 		top: 0;
@@ -23,6 +24,7 @@
 }
 .txt-service-item-4 {
 	max-width: 460px;
+	position: relative;
 	padding: 50px 40px 150px;
 	border-radius: 15px 15px 200px 15px;
 	background: linear-gradient(90deg, rgba(143, 115, 255, .1) 0%, rgba(83, 71, 255, .1) 45.27%, rgba(68, 113, 254, .1) 57.66%, rgba(33, 211, 253, .1) 100%);
@@ -101,7 +103,7 @@
 	padding-bottom: 45px;
 	border-bottom: 1.5px solid rgba(3, 6, 23, 0.1);
 	.txt-section-title-4 {
-		max-width: 450px;
+		max-width: 550px;
 	}
 	.txt-service-top-text {
 		max-width: 450px;
@@ -150,12 +152,77 @@
 				color: #030617;
 				font-size: 22px;
 				font-weight: 500;
-				display: inline-block;
-				padding-bottom: 15px;
+				display: inline !important;
+				background-position-y: 0px;
+				background-repeat: no-repeat;
+				background-size: 0 100%;
+				backface-visibility: hidden;
+				-webkit-backface-visibility: hidden;
+				background-image: linear-gradient(transparent calc(100% - 2px), currentColor 2px);
+				-webkit-transition: 0.6s cubic-bezier(0.215, 0.61, 0.355, 1);
+				transition: 0.6s cubic-bezier(0.215, 0.61, 0.355, 1);
+				&:hover {
+					background-size: 100% 100%;
+				}
 			}
 		}
 		p {
 			font-size: 14px;
+			padding-top: 15px;
 		}
+	}
+	&:hover {
+		.service-icon {
+			-webkit-animation-name: icon_move;
+			animation-name: icon_move;
+			-webkit-animation-duration: 1s;
+			animation-duration: 1s;
+			-webkit-animation-timing-function: ease-in-out;
+			animation-timing-function: ease-in-out;
+			-webkit-animation-iteration-count: 1;
+			animation-iteration-count: 1;
+		}
+	}
+}
+@media (max-width: 1280px) {
+	.txt-service-content-area-4 .txt-service-img-4 {
+		display: none;
+	}
+	.txt-service-content-4 {
+		justify-content: center;
+	}
+	.txt-service-section-4 .txt-section-title-4 {
+		margin: 0 auto;
+		text-align: center;
+	}
+}
+@media (max-width: 1200px) {
+	.txt-service-top-content-4 {
+		flex-wrap: wrap;
+		gap: 20px;
+	}
+	.txt-service-top-content-4 .txt-btn-4:before,
+	.txt-service-top-content-4 .txt-btn-4:after {
+		display: none;
+	}
+}
+@media (max-width: 991px) {
+	.txt-service-content-4 {
+		flex-wrap: wrap;
+	}
+	.txt-service-img-4_2 {
+		display: none;
+	}
+}
+@media (max-width: 767px) {
+	.txt-service-item-4_2 {
+		margin-bottom: 30px;
+	}
+	.txt-service-tab-btn li h3,
+	.txt-service-tab-btn li h3:before {
+		font-size: 24px;
+	}
+	.txt-service-item-4 .service-text .service_title a {
+		font-size: 28px;
 	}
 }

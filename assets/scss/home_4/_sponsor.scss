@@ -1,3 +1,8 @@
+.txt-sponsor-section-4 {
+	margin: 0 auto;
+	overflow: hidden;
+	max-width: 1920px;
+}
 .txt-sponsor-scroll,
 .txt-sponsor-scroll-2  {
 	display: flow-root;
@@ -42,4 +47,22 @@
 			}
 		}
 	}
+}
+@media (max-width: 1300px) {
+	.txt-about-content-4 {
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+}
+@media (max-width: 680px) {
+	.txt-about-img-wrap-4 {
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+	.txt-about-feature-4,
+	.txt-about-cta-list-area {
+		gap: 20px !important;
+		flex-wrap: wrap;
+	}
+
 }

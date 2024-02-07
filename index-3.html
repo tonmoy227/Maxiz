@@ -114,6 +114,10 @@
 					<div class="cta-btn  text-capitalize">
 						<a href="#">Contact Us <i class="fas fa-chevron-double-right"></i></a>
 					</div>
+					<div class="txt-navbar_options">
+						<button class="open_mobile_menu text-uppercase d-flex" aria-label="toggle mobile menu"
+						title="open txt-mobile menu"><i class="far fa-bars"></i> <span>MENU</span></button>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -131,6 +135,80 @@
 				<i class="far fa-times"></i>
 			</div>
 		</div>
+	</div>
+	<div class="mobile_menu position-relative">
+		<div class="mobile_menu_wrap">
+			<div class="mobile_menu_overlay open_mobile_menu"></div>
+			<div class="mobile_menu_content">
+				<div class="mobile_menu_close open_mobile_menu">
+					<i class="fal fa-times"></i>
+				</div>
+				<div class="m-brand-logo">
+					<a href="!#"><img src="assets/img/logo/logo-3.png"></a>
+				</div>
+				<div class="mobile-search-bar position-relative">
+					<form action="#">
+						<input type="text" name="search" placeholder="Keywords">
+						<button><i class="fal fa-search"></i></button>
+					</form>
+				</div>
+				<nav class="mobile-main-navigation  clearfix ul-li">
+					<ul id="m-main-nav" class="navbar-nav text-capitalize clearfix">
+						<li class="dropdown">
+							<a href="!#">Home</a>
+							<ul class="dropdown-menu clearfix">
+								<li><a href="index.html">Home Page 1</a></li>
+								<li><a href="index-2.html">Home Page 2</a></li>
+								<li><a href="index-3.html">Home Page 3</a></li>
+							</ul>
+						</li>
+						<li><a href="about.html">About</a></li>
+						<li class="dropdown">
+							<a href="!#">Service</a>
+							<ul class="dropdown-menu clearfix">
+								<li><a href="service.html">Service Page </a></li>
+								<li><a href="service-single.html">Service Details</a></li>
+							</ul>
+						</li>
+						<li class="dropdown">
+							<a href="!#">Project</a>
+							<ul class="dropdown-menu clearfix">
+								<li><a href="project.html">Services</a></li>
+								<li><a href="project-single.html">Team Page</a></li>
+							</ul>
+						</li>
+						<li class="dropdown">
+							<a href="!#">News</a>
+							<ul class="dropdown-menu clearfix">
+								<li><a href="blog.html">News </a></li>
+								<li><a href="blog-single.html">News Details</a></li>
+							</ul>
+						</li>
+						<li class="dropdown">
+							<a href="!#">Others</a>
+							<ul class="dropdown-menu clearfix">
+								<li><a href="team.html">Team Page </a></li>
+								<li><a href="team-single.html">Team  Details </a></li>
+								<li><a href="coming-soon.html">Coming Soon</a></li>
+								<li><a href="contact.html">Contact Page</a></li>
+								<li><a href="faq.html">Faq Page</a></li>
+								<li><a href="pricing.html">Pricing Page</a></li>
+							</ul>
+						</li>
+					</ul>
+				</nav>
+				<div class="txt-btn-m text-center">
+					<a href="#">Start Consult</a>
+				</div>
+				<div class="txt-mobile-header-social text-center">
+					<a href="#"> <i class="fab fa-instagram"></i></a>
+					<a href="#"> <i class="fab fa-linkedin-in"></i></a>
+					<a href="#"> <i class="fab fa-facebook"></i></a>
+					<a href="#"> <i class="fab fa-youtube"></i></a>
+				</div>
+			</div>
+		</div>
+		<!-- /Mobile-Menu -->
 	</div>
 <!-- End of Header section
 	============================================= -->
@@ -273,8 +351,8 @@
 		<div class="container">
 			<div class="txt-about-content-4 d-flex">
 				<div class="txt-about-img-wrap-4 d-flex">
-					<div class="txt-about-img-exp-4 position-relative">
-						<div class="txt-about-img-4_1">
+					<div class="txt-about-img-exp-4 appear_left position-relative">
+						<div class="txt-about-img-4_1 ">
 							<img src="assets/img/misc/ab4.1.jpg" alt="">
 						</div>
 						<div class="txt-about-exp4 text-center txt-headline-4">
@@ -282,24 +360,24 @@
 						</div>
 					</div>
 					<div class="txt-about-img-4_2">
-						<div class="inner_img_1">
+						<div class="inner_img_1 appear_right">
 							<img src="assets/img/misc/ab4.2.png" alt="">
 						</div>
-						<div class="inner_img_2">
+						<div class="inner_img_2 appear_top">
 							<img src="assets/img/misc/ab4.3.jpg" alt="">
 						</div>
 					</div>
 				</div>
 				<div class="txt-about-text-4">
-					<div class="txt-section-title-4 txt-headline-4 pera-content">
-						<div class="subtitle text-uppercase">
+					<div class="txt-section-title-4 txt-headline-4 pera-content txt-text-anim">
+						<div class="subtitle text-uppercase wow fadeInRight"  data-wow-delay="300ms" data-wow-duration="1000ms">
 							<img src="assets/img/arrow-6.svg" alt="">about us
 						</div>
-						<h2 class="section_title">We Combine our Develop Design</h2>
+						<h2 class="section_title tx-split-text split-in-fade">We Combine our Develop Design</h2>
 						<p>Lorem ipsum dolor sit amet consectetur. Donec mattis tristique elementum dignissim tortor aliquam. Magna tincidunt porttitor euismod id in bibendu.</p>
 					</div>
 					<div class="txt-about-feature-4 d-flex justify-content-between align-items-center">
-						<div class="txt-about-ft-item-4 d-flex align-items-center">
+						<div class="txt-about-ft-item-4 d-flex align-items-center wow zoomIn"  data-wow-delay="300ms" data-wow-duration="1000ms">
 							<div class="ft-icon d-flex align-items-center justify-content-center">
 								<i class="flaticon-care"> </i>
 							</div>
@@ -307,7 +385,7 @@
 								<h4>We Can Save Your Money</h4>
 							</div>
 						</div>
-						<div class="txt-about-ft-item-4 d-flex align-items-center">
+						<div class="txt-about-ft-item-4 d-flex align-items-center wow zoomIn"  data-wow-delay="400ms" data-wow-duration="1000ms">
 							<div class="ft-icon d-flex align-items-center justify-content-center">
 								<i class="flaticon-time-passing"> </i>
 							</div>
@@ -319,8 +397,8 @@
 					<div class="txt-about-cta-list-area d-flex align-items-center justify-content-between">
 						<div class="txt-about-cta-list ul-li">
 							<ul>
-								<li><i class="flaticon-checkmark"></i> Production or trading</li>
-								<li><i class="flaticon-checkmark"></i> 100% Better results</li>
+								<li class="wow" data-splitting=""><i class="flaticon-checkmark"></i> Production or trading</li>
+								<li class="wow" data-splitting=""><i class="flaticon-checkmark"></i> 100% Better results</li>
 							</ul>
 						</div>
 						<div class="txt-about-cta-4 d-flex align-items-center">
@@ -333,7 +411,7 @@
 							</div>
 						</div>
 					</div>
-					<div class="txt-about-btn-video d-flex justify-content-between">
+					<div class="txt-about-btn-video d-flex justify-content-between wow fadeInUp"  data-wow-delay="300ms" data-wow-duration="1000ms">
 						<div class="txt-btn-4_2 text-uppercase">
 							<a href="#">learn more <i class="far fa-chevron-double-right"></i></a>
 						</div>
@@ -362,16 +440,16 @@
 		<span class="txt-service-shape position-absolute"><img src="assets/img/misc/ser-side-shape1.png" alt=""></span>
 		<div class="container">
 			<div class="txt-section-title-4 txt-headline-4 pera-content">
-				<div class="subtitle text-uppercase">
+				<div class="subtitle text-uppercase wow fadeInRight"  data-wow-delay="300ms" data-wow-duration="1000ms">
 					<img src="assets/img/arrow-6.svg" alt="">our best services
 				</div>
-				<h2 class="section_title">Unlock Revenue Grow For You Business</h2>
+				<h2 class="section_title tx-split-text split-in-up">Unlock Revenue Grow For You Business</h2>
 			</div>
 			<div class="txt-service-content-area-4 position-relative">
-				<div class="txt-service-img-4 position-absolute">
+				<div class="txt-service-img-4 position-absolute appear_top">
 					<img src="assets/img/misc/ser1.jpg" alt="">
 				</div>
-				<div class="txt-service-content-4 d-flex">
+				<div class="txt-service-content-4 d-flex wow fadeInLeft"  data-wow-delay="300ms" data-wow-duration="1000ms">
 					<div class="txt-service-tab-content">
 						<div class="tab-content">
 							<div class="tab-pane animated fadeInRight show active" id="tab1">
@@ -506,25 +584,25 @@
 <!-- Start of Why choose section
 	============================================= -->
 	<section id="txt-why-choose-4" class="txt-why-choose-section-4 position-relative pt-110 pb-110" data-background="assets/img/bg/wc-bg4.jpg">
-		<div class="txt-wc-side-img-4 position-absolute">
+		<div class="txt-wc-side-img-4 appear_right position-absolute">
 			<img src="assets/img/misc/wc4.2.jpg" alt="">
 		</div>
 		<div class="container">
 			<div class="txt-why-choose-content-4 d-flex">
 				<div class="txt-why-choose-text-area-4">
-					<div class="txt-section-title-4 txt-headline-4 pera-content">
-						<div class="subtitle text-uppercase">
+					<div class="txt-section-title-4 txt-headline-4 pera-content txt-text-anim">
+						<div class="subtitle text-uppercase wow fadeInRight"  data-wow-delay="300ms" data-wow-duration="1000ms">
 							<img src="assets/img/arrow-6.svg" alt="">why choose us buscon
 						</div>
-						<h2 class="section_title">Better Design for your Digital products</h2>
+						<h2 class="section_title tx-split-text split-in-fade">Better Design for your Digital products</h2>
 						<p>Dolor sit amet consectetur. Donec mattis tristique element dignissim tortor aliquam.</p>
 					</div>
-					<div class="txt-why-choose-img-4">
+					<div class="txt-why-choose-img-4  txt_item_active position-relative">
 						<img src="assets/img/misc/wc4.1.jpg" alt="">
 					</div>
 				</div>
 				<div class="txt-why-choose-skill-4">
-					<div class="txt-why-choose-video-play position-relative">
+					<div class="txt-why-choose-video-play  position-relative">
 						<div class="inner-img">
 							<img src="assets/img/misc/wc-skill.jpg" alt="">
 						</div>
@@ -532,7 +610,7 @@
 							<a class="d-flex align-items-center justify-content-center" href="#"><i class="fas fa-play"></i></a>
 						</div>
 					</div>
-					<div class="txt-wc-skill-area-4">
+					<div class="txt-wc-skill-area-4 wow fadeInUp"  data-wow-delay="300ms" data-wow-duration="1000ms">
 						<div class="txt-why-choose-skill-area">
 							<div class="skill-set-percent txt-headline-4">
 								<h4>UI/UX Design</h4>
@@ -578,7 +656,7 @@
 	<section id="txt-award-4" class="txt-award-section">
 		<div class="txt-award-content-4 d-flex">
 			<div class="txt-award-title txt-headline-4 d-flex align-items-center justify-content-center">
-				<h3>Awards</h3>
+				<h3 class="wow" data-splitting="">Awards</h3>
 			</div>
 			<div class="txt-sponsor-scroll-2">
 				<div class="txt-sp-img1_2 position-relative">
@@ -646,10 +724,10 @@
 	<section id="txt-project-4" class="txt-project-section-4 position-relative pt-110">
 		<span class="txt-project-testimonial-bg position-absolute" data-background="assets/img/bg/pro-test-bg.jpg"></span>
 		<div class="txt-section-title-4 txt-headline-4 text-center pera-content">
-			<div class="subtitle text-uppercase">
+			<div class="subtitle text-uppercase wow fadeInRight"  data-wow-delay="300ms" data-wow-duration="1000ms">
 				<img src="assets/img/arrow-6.svg" alt="">our best Projects
 			</div>
-			<h2 class="section_title">Explore Our Best Recently Completed Projects</h2>
+			<h2 class="section_title tx-split-text split-in-up">Explore Our Best Recently Completed Projects</h2>
 		</div>
 		<div class="txt-project-sldier-4 swiper-container">
 			<div class="swiper-wrapper">
@@ -717,10 +795,10 @@
 		<div class="txt-testimonial-section-4 pt-100">
 			<div class="container">
 				<div class="txt-section-title-4 color-white txt-headline-4 text-center pera-content">
-					<div class="subtitle text-uppercase">
+					<div class="subtitle text-uppercase wow fadeInRight"  data-wow-delay="300ms" data-wow-duration="1000ms">
 						<img src="assets/img/arrow-6.svg" alt="">our TESTIMONIAL
 					</div>
-					<h2 class="section_title">Our Clients Say About Our Services</h2>
+					<h2 class="section_title tx-split-text split-in-up">Our Clients Say About Our Services</h2>
 				</div>
 				<div class="testimonial-carousel swiper-container">
 					<div class="swiper-wrapper">
@@ -900,13 +978,15 @@
 		<div class="container">
 			<div class="txt-service-top-content-4 d-flex justify-content-between align-items-center">
 				<div class="txt-section-title-4 txt-headline-4 pera-content">
-					<div class="subtitle text-uppercase">
+					<div class="subtitle text-uppercase wow fadeInRight"  data-wow-delay="300ms" data-wow-duration="1000ms">
 						<img src="assets/img/arrow-6.svg" alt="">our best services
 					</div>
-					<h2 class="section_title">A Simple Yet Powerful Process</h2>
+					<h2 class="section_title tx-split-text split-in-fade">A Simple Yet Powerful Process</h2>
 				</div>
-				<div class="txt-service-top-text">
-					Class consectetur mollis dictumst fusce faci taciti eu vivamus integer ornare ultrices. Pla nec elementum dolor eros volutpat. 
+				<div class="txt-service-top-text pera-content txt-text-anim">
+					<p>
+						Class consectetur mollis dictumst fusce faci taciti eu vivamus integer ornare ultrices. Pla nec elementum dolor eros volutpat.
+					</p>
 				</div>
 				<div class="txt-btn-4 text-uppercase">
 					<a href="#">get in touch <i class="far fa-arrow-right"></i></a>
@@ -914,15 +994,15 @@
 			</div>
 			<div class="txt-service-content-4_2">
 				<div class="row">
-					<div class="col-lg-3 col-md-5">
-						<div class="txt-service-img-4_2">
+					<div class="col-lg-3">
+						<div class="txt-service-img-4_2 appear_left">
 							<img src="assets/img/misc/ser-4.png" alt="">
 						</div>
 					</div>
-					<div class="col-lg-9 col-md-7">
+					<div class="col-lg-9">
 						<div class="txt-service-item-content-4_2">
 							<div class="row">
-								<div class="col-md-4">
+								<div class="col-md-4 wow fadeInUp"  data-wow-delay="300ms" data-wow-duration="1000ms">
 									<div class="txt-service-item-4_2 position-relative">
 										<div class="service-icon d-flex align-items-center justify-content-center">
 											<i class="flaticon-check-list"></i>
@@ -933,7 +1013,7 @@
 										</div>
 									</div>
 								</div>
-								<div class="col-md-4">
+								<div class="col-md-4 wow fadeInUp"  data-wow-delay="400ms" data-wow-duration="1000ms">
 									<div class="txt-service-item-4_2 position-relative">
 										<div class="service-icon d-flex align-items-center justify-content-center">
 											<i class="flaticon-strategy"></i>
@@ -944,7 +1024,7 @@
 										</div>
 									</div>
 								</div>
-								<div class="col-md-4">
+								<div class="col-md-4 wow fadeInUp"  data-wow-delay="500ms" data-wow-duration="1000ms">
 									<div class="txt-service-item-4_2 position-relative">
 										<div class="service-icon d-flex align-items-center justify-content-center">
 											<i class="flaticon-data"></i>
@@ -973,11 +1053,11 @@
 		<div class="container">
 			<div class="txt-faq-content-area-4 d-flex justify-content-end">
 				<div class="txt-faq-content-4">
-					<div class="txt-section-title-4 txt-headline-4 pera-content">
-						<div class="subtitle text-uppercase">
+					<div class="txt-section-title-4 txt-headline-4 pera-content txt-text-anim">
+						<div class="subtitle text-uppercase wow fadeInRight"  data-wow-delay="300ms" data-wow-duration="1000ms">
 							<img src="assets/img/arrow-6.svg" alt="">our faqs
 						</div>
-						<h2 class="section_title">You Are Confused! Question & Answers.</h2>
+						<h2 class="section_title tx-split-text split-in-fade">You Are Confused! Question & Answers.</h2>
 						<p>In nec libero luctus, aliquet turpis at, vehicula nisi. Cras eget mauri in nisl tempus lobortis. Nunc in nisi sapien. </p>
 					</div>
 					<div class="txt-faq-accordion ver_4">
@@ -1036,11 +1116,12 @@
 
 <!-- Start of Cta section 
 	============================================= -->
-	<section id="txt-cta-4" class="txt-cta-section-4 position-relative" data-background="assets/img/bg/cta-bg2.jpg">
+	<section id="txt-cta-4" class="txt-cta-section-4 position-relative">
 		<div class="background_overlay"></div>
+		<div class="cta-bg position-absolute" data-background="assets/img/bg/cta-bg2.jpg"></div>
 		<div class="txt-cta-content-4 txt-headline-4 text-center">
-			<h3>Ready To Move Into The Digital World?</h3>
-			<div class="txt-btn-4 text-uppercase">
+			<h3 class="tx-split-text split-in-up">Ready To Move Into The Digital World?</h3>
+			<div class="txt-btn-4 text-uppercase wow zoomIn"  data-wow-delay="300ms" data-wow-duration="1000ms">
 				<a href="#">get in touch <i class="far fa-arrow-right"></i></a>
 			</div>
 		</div>
@@ -1053,13 +1134,13 @@
 	<section id="txt-blog-4" class="txt-blog-section-4 pt-110 pb-110">
 		<div class="container">
 			<div class="txt-section-title-4 txt-headline-4 text-center pera-content">
-				<div class="subtitle text-uppercase">
+				<div class="subtitle text-uppercase wow fadeInRight"  data-wow-delay="300ms" data-wow-duration="1000ms">
 					<img src="assets/img/arrow-6.svg" alt="">our TESTIMONIAL
 				</div>
-				<h2 class="section_title">Read Our Recent News Get Every Update</h2>
+				<h2 class="section_title tx-split-text split-in-up">Read Our Recent News Get Every Update</h2>
 			</div>
 			<div class="txt-blog-content-4 d-flex">
-				<div class="txt-blog-item-area">
+				<div class="txt-blog-item-area wow fadeInLeft"  data-wow-delay="300ms" data-wow-duration="1000ms">
 					<div class="txt-blog-item-4 position-relative">
 						<div class="blog-img">
 							<img src="assets/img/blog/blg4.1.jpg" alt="">
@@ -1078,7 +1159,7 @@
 					</div>
 				</div>
 				<div class="txt-blog-item-wrapper-2">
-					<div class="txt-blog-item-4_2 position-relative d-flex align-items-center flex-wrap">
+					<div class="txt-blog-item-4_2 position-relative d-flex align-items-center wow fadeInUp"  data-wow-delay="400ms" data-wow-duration="1000ms">
 						<div class="blog-img">
 							<img src="assets/img/blog/blg4.2.jpg" alt="">
 						</div>
@@ -1091,7 +1172,7 @@
 							<p>Lorem ipsum dolor sit amet consectetur. Viverra suspendisse donec.</p>
 						</div>
 					</div>
-					<div class="txt-blog-item-4_2 position-relative d-flex align-items-center flex-wrap">
+					<div class="txt-blog-item-4_2 position-relative d-flex align-items-center wow fadeInUp"  data-wow-delay="500ms" data-wow-duration="1000ms">
 						<div class="blog-img">
 							<img src="assets/img/blog/blg4.3.jpg" alt="">
 						</div>
@@ -1104,7 +1185,7 @@
 							<p>Lorem ipsum dolor sit amet consectetur. Viverra suspendisse donec.</p>
 						</div>
 					</div>
-					<div class="txt-blog-item-4_2 position-relative d-flex align-items-center flex-wrap">
+					<div class="txt-blog-item-4_2 position-relative d-flex align-items-center wow fadeInUp"  data-wow-delay="600ms" data-wow-duration="1000ms">
 						<div class="blog-img">
 							<img src="assets/img/blog/blg4.4.jpg" alt="">
 						</div>
@@ -1129,11 +1210,11 @@
 	<footer id="txt-footer-4" class="txt-footer-section-4">
 		<div class="txt-footer-cta-4">
 			<div class="container">
-				<div class="txt-footer-cta-content-4 txt-headline-4 justify-content-between pera-content d-flex align-items-center">
-					<div class="txt-btn-4 text-uppercase">
+				<div class="txt-footer-cta-content-4 txt-headline-4 txt-text-anim justify-content-between pera-content d-flex align-items-center">
+					<div class="txt-btn-4 appear_left text-uppercase">
 						<a href="#">get in touch <i class="far fa-arrow-right"></i></a>
 					</div>
-					<h3>Let’s Work 
+					<h3 class="tx-split-text split-in-fade">Let’s Work 
 					Together</h3>
 					<p>Class consectetur mollis dictumst fusce faci taciti eu vivamus integer ornare ultrices. Pla nec elementum dolor eros volutpat. </p>
 				</div>
@@ -1144,7 +1225,7 @@
 				<div class="txt-footer-content-4 position-relative">
 					<div class="txt-footer-widget-3 ver_2 text-center pera-content">
 						<div class="brand-logo">
-							<a href="#"><img src="assets/img/logo/loogo-6.png" alt=""></a>
+							<a href="#"><img src="assets/img/logo/logo-5.svg" alt=""></a>
 						</div>
 						<p>Vehicula hac arcu ullamcorper vulputate eros donec. Molestie tortor cubilia dis duis sem aptent facilisi curabitur praesent risus. Donec curabitur erat lacus interdum.</p>
 						<div class="footer-social d-flex justify-content-center">

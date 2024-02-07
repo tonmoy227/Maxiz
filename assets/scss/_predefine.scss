@@ -28,6 +28,11 @@ body {
 		max-width: 1320px;
 	}
 }
+.txt-home-3 {
+	.container {
+		max-width: 1320px;
+	}
+}
 body::-webkit-scrollbar {
 	width: 6px;
 }
@@ -450,27 +455,47 @@ button {
 			transition: all 500ms ease;
 			background-color: var(--txt-title-color-1);
 		}
-		i {
+		i { 
 			margin-left: 10px;
 			transform: rotate(-45deg);
+			transition: all 500ms ease;
 		}
 		&:hover {
+			i {
+				transform: rotate(0deg);
+			}
 			&:before {
 				width: 95%;
+
 			}
 		}
 	}
 }
 .txt-btn-4_2 {
 	a {
+		z-index: 1;
 		color: #fff;
 		font-size: 16px;
+		overflow: hidden;
 		font-weight: 500;
 		padding: 17px 35px;
+		position: relative;
 		border-radius: 50px;
 		display: inline-block;
 		font-family: var(--txt-alt-font-1);
 		background: var(--txt-gradient-3);
+		&:before {
+			top: 0;
+			left: 0;
+			z-index: -1;
+			width: 0%;
+			height: 100%;
+			content: '';
+			border-radius: 50px;
+			position: absolute;
+			transition: all 500ms ease;
+			background-color: #4471FE;
+		}
 		i {
 			margin-left: 20px;
 			position: relative;
@@ -484,6 +509,11 @@ button {
 				position: absolute;
 			}
 		}
+		&:hover {
+			&:before {
+				width: 100%;
+			}
+		}
 	}
 }
 @media (max-width: 991px) {
@@ -491,6 +521,22 @@ button {
 		padding: 15px 20px;
 		img {
 			display: none;
+		}
+	}
+	.txt-btn-4 {
+		padding-right: 0;
+		&:before,
+		&:after {
+			display: none;
+		}
+		a {
+			font-size: 16px;
+			padding: 12px 30px;
+			border-radius: 40px;
+			background: var(--txt-gradient-3);
+			&:before {
+				display: none;
+			}
 		}
 	}
 }
@@ -577,10 +623,20 @@ button {
 	.txt-section-title-m .section_title {
 		font-size: 45px;
 	}
+	.txt-section-title-4 {
+		.section_title {
+			font-size: 45px;
+		}
+	}
 }
 @media (max-width: 1200px) {
 	.txt-section-title-3 {
 		.sec_title {
+			font-size: 42px;
+		}
+	}
+	.txt-section-title-4 {
+		.section_title {
 			font-size: 42px;
 		}
 	}
@@ -593,6 +649,11 @@ button {
 	}
 	.txt-section-title-m .section_title {
 		font-size: 40px;
+	}
+	.txt-section-title-4 {
+		.section_title {
+			font-size: 40px;
+		}
 	}
 }
 @media (max-width: 767px) {
@@ -607,6 +668,11 @@ button {
 	.txt-btn-m a {
 		padding: 14px 20px;
 	}
+	.txt-section-title-4 {
+		.section_title {
+			font-size: 35px;
+		}
+	}
 }
 @media (max-width: 480px) {
 	.txt-section-title-3 {
@@ -617,4 +683,5 @@ button {
 	.txt-section-title-m .section_title {
 		font-size: 30px;
 	}
+
 }

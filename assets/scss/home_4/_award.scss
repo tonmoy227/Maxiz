@@ -23,3 +23,32 @@
 		}
 	}
 }
+@media (max-width: 1150px) {
+	.txt-award-content-4 .txt-award-title {
+		height: 150px;
+	}
+	.txt-award-content-4 .txt-award-title h3 {
+		font-size: 40px;
+	}
+	.txt-sponsor-scroll-2 {
+		height: 135px;
+		line-height: 120px;
+	}
+}
+@media (max-width: 768px) {
+	.txt-sponsor-scroll-2 { 
+		width: 100%;
+	}
+	.txt-award-content-4 .txt-award-title {
+		width: 250px;
+		height: 100px;
+	}
+	.txt-award-content-4 {
+		flex-wrap: wrap;
+	}
+}
+@media (max-width: 480px) {
+	.txt-award-content-4 .txt-award-title {
+		width: 100%;
+	}
+}
