@@ -1,0 +1,40 @@
+.txt-breadcrumb-content {
+	padding: 295px 0px 180px;
+	.bread_title {
+		color: #fff;
+		font-size: 70px;
+		font-weight: 800;
+		padding-bottom: 30px;
+	}
+	ul {
+		padding: 18px 5px;
+		border-radius: 40px;
+		display: inline-block;
+		border: 2px solid #BEE041;
+		li {
+			color: var(--txt-main-color);
+			font-size: 20px;
+			font-weight: 600;
+			padding: 0px 22px;
+			position: relative;
+			a {
+				color: #fff;
+			}
+			&:before {
+				top: 5px;
+				right: -16px;
+				width: 24px;
+				content: "";
+				height: 20px;
+				position: absolute;
+				background-repeat: no-repeat;
+				background-image: url(../img/icon/arrow.svg);
+			}
+			&:last-child {
+				&:before {
+					display: none;
+				}
+			}
+		}
+	}
+}

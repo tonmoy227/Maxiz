@@ -33,6 +33,7 @@ Last change:    00/00/00
 				this.TextScroller();
 				this.MainSliderOne();
 				this.MainSlider3();
+				this.BlogPageSlider();
 				this.MainSliderThree();
 				this.SponsorScroll();
 				this.FaqActive();
@@ -351,6 +352,22 @@ Last change:    00/00/00
 					.set(el, {transformOrigin: 'center center'})
 					.from(el, {  scale: 1.3 }, {background: "inherit", scale: 1, duration: 1, immediateRender: false})
 				})
+				gsap.utils.toArray('.txt-footer-content-3 .footer-circle-shape').forEach((el, index) => { 
+					let tl1 = gsap.timeline({
+						scrollTrigger: {
+							trigger: el,
+							scrub: 1,
+							start: "top 80%",
+							end: "buttom 60%",
+							toggleActions: "play none none reverse",
+							markers: false
+						}
+					})
+
+					tl1
+					.set(el, {transformOrigin: 'center center'})
+					.from(el, {  scale: 21 }, {background: "inherit", scale: 1, duration: 3, immediateRender: false})
+				})
 			},
 			StickyHeader: function (){
 				jQuery(window).on('scroll', function() {
@@ -616,6 +633,20 @@ Last change:    00/00/00
 					navigation: {
 						prevEl: ".txt-pro-button-prev-3",
 						nextEl: ".txt-pro-button-next-3",
+					},
+				});
+			},
+			BlogPageSlider: function (){
+				var swiper2 = new Swiper(".img_slider", {
+					slidesPerView: 1,
+					loop: true,
+					spaceBetween: 30,
+					roundLengths: true,
+					effect: "fade",
+					speed: 1000,
+					navigation: {
+						prevEl: ".img_slider_prev",
+						nextEl: ".img_slider_next",
 					},
 				});
 			},
